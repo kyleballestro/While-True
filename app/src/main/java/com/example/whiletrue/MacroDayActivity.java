@@ -345,6 +345,3 @@ public class MacroDayActivity extends AppCompatActivity {
         snacksMap = new HashMap<>();
     }
 }
-
-// Testing push
-// Test 2
