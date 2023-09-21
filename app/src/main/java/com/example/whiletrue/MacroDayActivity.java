@@ -83,7 +83,7 @@ public class MacroDayActivity extends AppCompatActivity {
         }
 
         // RESET EVERYTHING (keep this commented out unless desired)
-        //resetData();
+//        resetData();
 
         Intent intent = getIntent();
         date = intent.getStringExtra("date");
@@ -345,3 +345,5 @@ public class MacroDayActivity extends AppCompatActivity {
         snacksMap = new HashMap<>();
     }
 }
+
+// Testing push
