@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:text="Title"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

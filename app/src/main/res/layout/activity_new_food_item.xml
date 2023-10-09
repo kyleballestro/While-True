@@ -17,71 +17,104 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="35dp"
         android:text="Meal Type: "
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pleaseFillOutTxt" />
 
-    <EditText
-        android:id="@+id/foodNameEditText"
-        android:layout_width="match_parent"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/foodCard"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:hint="Food Name"
-        android:layout_marginTop="20dp"
-        android:textSize="30sp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MealTypeTxt" />
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/MealTypeTxt">
 
-    <EditText
-        android:id="@+id/caloriesEditText"
-        android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/foodNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:hint="Food Name"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/caloriesCard"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:hint="Calories"
-        android:textSize="30sp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foodNameEditText" />
-
-    <EditText
-        android:id="@+id/proteinEditText"
-        android:layout_width="match_parent"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Protein"
-        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/caloriesEditText" />
+        app:layout_constraintTop_toBottomOf="@id/foodCard">
 
-    <EditText
-        android:id="@+id/carbsEditText"
-        android:layout_width="match_parent"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Carbs"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/proteinEditText" />
+        <EditText
+            android:id="@+id/caloriesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:hint="Calories"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
 
-    <EditText
-        android:id="@+id/fatsEditText"
-        android:layout_width="match_parent"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/proteinCard"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Fats"
-        android:textSize="30sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/carbsEditText" />
+        app:layout_constraintTop_toBottomOf="@id/caloriesCard">
+
+        <EditText
+            android:id="@+id/proteinEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:hint="Protein"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carbsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/proteinCard">
+
+        <EditText
+            android:id="@+id/carbsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:hint="Carbs"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fatsCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/carbsCard">
+
+        <EditText
+            android:id="@+id/fatsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:hint="Fats"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -95,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="130dp"
-        android:text="Please Fill Out The Following Information"
+        android:text="Please fill out the following information"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,27 +136,27 @@
 
     <Button
         android:id="@+id/confirmBtn"
-        android:layout_width="150dp"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
+        android:layout_marginLeft="50dp"
         android:width="125dp"
         android:text="Confirm"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fatsEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/fatsCard" />
 
     <Button
         android:id="@+id/cancelBtn"
-        android:layout_width="150dp"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="45dp"
+        android:layout_marginRight="50dp"
         android:width="125dp"
         android:text="Cancel"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fatsEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/fatsCard" />
 
     <TextView
         android:id="@+id/warningTxt"

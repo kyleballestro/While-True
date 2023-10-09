@@ -41,10 +41,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="35dp"
-        android:text="Select Date"
+        android:text="Select a Date"
         android:layout_marginTop="75dp"
         android:textColor="@color/brownAccent"
-        android:textSize="40sp"
+        android:textSize="35sp"
         app:layout_constraintTop_toBottomOf="@id/appbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
